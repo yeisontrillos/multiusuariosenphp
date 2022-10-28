@@ -205,8 +205,7 @@ header .textos-header{
 	}
     $registros = mysqli_query($conexion, "SELECT * FROM mainlogin") 
     or die("Problemas en el select" . mysqli_error($conexion)); ?>
-
-<button type="button" style="position:absolute; left:350px;"  class="btn btn-success"  data-toggle="modal" data-target="#exampleModal"> Nuevo usuario</button>
+<a href="nuevousuadm.php" class="btn btn-success" style="position:absolute; left:350px;"  class="btn btn-success">nuevo usuario</a>
 <table class="table mx-auto"   style="margin: 100px; margin-lef: 200px; width:70%;">
   <thead class="thead-dark">
     <tr>
@@ -249,82 +248,6 @@ header .textos-header{
 	<?php } ?>
   </tbody>
 </table>
-
-
-
-
-<!-- Modal de registro de usuario -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-    
-  
-
-
-
-
-<div class="login-form">  
-<form action="conexionregadm.php" method="post" class="form-horizontal" style="background-color:#dde1ef; border-radius:12px; width:100%; ">
-<center><h2 class="titulo_regis">Registrarse</h2></center>
-<div class="form-group">
-<label  class="col-sm-9 text-left">Usuario</label>
-<div class="col-sm-12">
-<input id="bottom_newregi" type="text" name="username" class="form-control" placeholder="Ingrese usuario" />
-</div>
-</div>
-
-<div class="form-group">
-<label class="col-sm-9 text-left">Email</label>
-<div class="col-sm-12">
-<input id="bottom_newregi" type="text" name="email" class="form-control" placeholder="Ingrese email" />
-</div>
-</div>
-    
-<div class="form-group">
-<label class="col-sm-9 text-left">Password</label>
-<div class="col-sm-12">
-<input id="bottom_newregi" type="password" name="password" class="form-control" placeholder="Ingrese password" />
-</div>
-</div>
-    
-<div class="form-group">
-    <label class="col-sm-9 text-left">Seleccione tipo</label>
-    <div class="col-sm-12">
-    <select id="bottom_newregi" class="form-control" name="role">
-        <option value="" selected="selected"> - seleccione rol - </option>
-        <option value="admin">Admin</option>
-        <option value="personal">Personal</option>
-        <option value="usuarios">Usuarios</option>
-    </select>
-    </div>
-</div>
-
-<div class="form-group">
-  <div class="col-sm-12">
-  <input  type="submit" name="btn_register" class="btn btn-success btn-block" value="Registrar">
-  <!--<a href="index.php" class="btn btn-danger">Cancel</a>-->
-  </div>
-</div> 
-</form>
-</div>
-
-
-
-
-
-
-
-
-
-<!--cierre del modal de registro de usuario -->
-
-
 
 <!--inicio de estilos del modal-->
 <style>
