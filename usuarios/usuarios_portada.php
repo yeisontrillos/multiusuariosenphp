@@ -176,7 +176,7 @@ header .textos-header{
 
 
 <?php 
-    $conexion = mysqli_connect("localhost", "root", "", "php_multilogin") or
+    $conexion = mysqli_connect("bq0blsp5cjqgnsb6of7v-mysql.services.clever-cloud.com", "uhxjobwzbkzkkimo", "b392blez1n8d9gzyXV4p", "bq0blsp5cjqgnsb6of7v") or
 	  die("Problemas con la conexión");
     $registros = mysqli_query($conexion, "SELECT * FROM mainlogin") 
     or die("Problemas en el select" . mysqli_error($conexion)); ?>

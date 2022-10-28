@@ -1,6 +1,6 @@
     <?php 
       if($_POST) {
-        $conexion = mysqli_connect("localhost", "root", "", "php_multilogin") or
+        $conexion = mysqli_connect("bq0blsp5cjqgnsb6of7v-mysql.services.clever-cloud.com", "uhxjobwzbkzkkimo", "b392blez1n8d9gzyXV4p", "bq0blsp5cjqgnsb6of7v") or
         die("Problemas con la conexión");
     
       mysqli_query($conexion, "insert into mainlogin (id ,username ,email ,password ,role) values 

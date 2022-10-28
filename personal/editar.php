@@ -66,7 +66,7 @@ body {
 <?php 
 
 $id = $_GET['id'];
-$conexion = mysqli_connect("localhost", "root", "", "php_multilogin") or
+$conexion = mysqli_connect("bq0blsp5cjqgnsb6of7v-mysql.services.clever-cloud.com", "uhxjobwzbkzkkimo", "b392blez1n8d9gzyXV4p", "bq0blsp5cjqgnsb6of7v") or
 die("Problemas con la conexión");
 $registros = mysqli_query($conexion, "SELECT * FROM `mainlogin` WHERE id=$id"); 
 ?>
@@ -76,7 +76,7 @@ $registros = mysqli_query($conexion, "SELECT * FROM `mainlogin` WHERE id=$id");
    <?php
     if($_POST){
    $a = $_GET['id'];
-   $conexion = mysqli_connect("localhost", "root", "", "php_multilogin") or
+   $conexion = mysqli_connect("bq0blsp5cjqgnsb6of7v-mysql.services.clever-cloud.com", "uhxjobwzbkzkkimo", "b392blez1n8d9gzyXV4p", "bq0blsp5cjqgnsb6of7v") or
      die("Problemas con la conexión");
     
    $registros = mysqli_query($conexion, "SELECT * FROM `mainlogin`") or
