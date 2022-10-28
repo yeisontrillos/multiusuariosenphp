@@ -6,6 +6,6 @@
       mysqli_query($conexion, "insert into mainlogin (id ,username ,email ,password ,role) values 
                            ('$_REQUEST[id]','$_REQUEST[username]','$_REQUEST[email]','$_REQUEST[password]','$_REQUEST[role]')")
         or die("Problemas en el select" . mysqli_error($conexion));
-        header ("location: personal_portada.php");
+        echo "<script>location.href='personal_portada.php'</script>";
       }
       ?>
