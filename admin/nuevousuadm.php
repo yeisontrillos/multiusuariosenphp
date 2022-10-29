@@ -5,12 +5,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
 <title>ProyectoMultiusuYei</title>
-		
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-<script src="js/jquery-1.12.4-jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="index.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://kit.fontawesome.com/1a3d6caaee.js" crossorigin="anonymous"></script>
+
 <style type="text/css">
+
 	.login-form {
 		width: 340px;
     	margin: 20px auto;
@@ -32,29 +42,6 @@
         font-size: 15px;
         font-weight: bold;
     }
-    .body__init {
-    background-image: url("img/img-6.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-/*este es los estilos del bode de registro de usuario*/
-.body__registro {
-    background-image: url("img/img-6.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/*aqui cierran los estilos del bode de registro de usuario*/
-.titulo__ini{
-    font-size: 25px;
-    text-align: center;
-    font-family:  Georgia, serif;
-    font-family:'Times New Roman', Times, serif;
-}
-
-
-
 #bottom_ini{
     display: flex;
     justify-content: center;
@@ -65,11 +52,22 @@
 
 }
 
+.body__registro {
+    background-image: url("img/img-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'open sans'
+}
+/*aqui cierran los estilos del bode de registro de usuario*/
+.titulo__ini{
+    font-size: 25px;
+    text-align: center;
+    font-family:  Georgia, serif;
+    font-family:'Times New Roman', Times, serif;
+}
 </style>
-</head>
-	<body class="body__registro">
-<?php
 
+<?php 
 require_once "DBconect.php";
 
 if(isset($_REQUEST['btn_register'])) //compruebe el nombre del botón "btn_register" y configúrelo
@@ -125,7 +123,7 @@ if(isset($_REQUEST['btn_register'])) //compruebe el nombre del botón "btn_regis
 				if($insert_stmt->execute())
 				{
 					$registerMsg="Registro exitoso: Esperar página de inicio de sesión"; //Ejecuta consultas 
-					header("refresh:2;index.php"); //Actualizar despues de 2 segundo a la portada
+					header("refresh:2;admin_portada.php"); //Actualizar despues de 2 segundo a la portada
 				}
 			}
 		}
@@ -212,7 +210,7 @@ if(isset($_REQUEST['btn_register'])) //compruebe el nombre del botón "btn_regis
 <!--<a href="index.php" class="btn btn-danger">Cancel</a>-->
 </div>
 </div>
-    
+
 </form>
 </div><!--Cierra div login-->
 		</div>
