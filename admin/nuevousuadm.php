@@ -5,22 +5,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
 <title>ProyectoMultiusuYei</title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="https://kit.fontawesome.com/1a3d6caaee.js" crossorigin="anonymous"></script>
-
+		
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<script src="js/jquery-1.12.4-jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="index.css">
 <style type="text/css">
-
 	.login-form {
 		width: 340px;
     	margin: 20px auto;
@@ -42,29 +32,9 @@
         font-size: 15px;
         font-weight: bold;
     }
-    
-  #bottom_newregi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-color: #dde1ef;
-    box-shadow: -3px -3px 7px #fff, 3px 3px 5px rgb(94, 104, 121, 0.7);
-
-}
-body {
-    font-family: 'open sans';
-}
-
-.body__edit {
-    background-image: url("img/img-6.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 </style>
-
-<body class="body__edit">
-    
+</head>
+	<body class="body__registro">
 <?php
 
 require_once "DBconect.php";
@@ -166,34 +136,35 @@ if(isset($_REQUEST['btn_register'])) //compruebe el nombre del botón "btn_regis
 
 
 
-<div class="login-form">  
-<form method="post" class="form-horizontal" style="background-color:#dde1ef; border-radius:12px; width:100%; ">
-<center><h2 class="titulo_regis">Registrarse</h2></center>
+
+<div class="login-form" style="position: absolute; right:400px; top:130px;">  
+<form method="post" class="form-horizontal" style="background-color:#dde1ef; border-radius:12px; ">
+<h2 class="titulo__ini">Registrarse</h2>
 <div class="form-group">
 <label  class="col-sm-9 text-left">Usuario</label>
 <div class="col-sm-12">
-<input id="bottom_newregi" type="text" name="txt_username" class="form-control" placeholder="Ingrese usuario" />
+<input id="bottom_ini" type="text" name="txt_username" class="form-control" placeholder="Ingrese usuario" />
 </div>
 </div>
 
 <div class="form-group">
 <label class="col-sm-9 text-left">Email</label>
 <div class="col-sm-12">
-<input id="bottom_newregi" type="text" name="txt_email" class="form-control" placeholder="Ingrese email" />
+<input id="bottom_ini" type="text" name="txt_email" class="form-control" placeholder="Ingrese email" />
 </div>
 </div>
     
 <div class="form-group">
 <label class="col-sm-9 text-left">Password</label>
 <div class="col-sm-12">
-<input id="bottom_newregi" type="txt_password" name="password" class="form-control" placeholder="Ingrese password" />
+<input id="bottom_ini" type="password" name="txt_password" class="form-control" placeholder="Ingrese password" />
 </div>
 </div>
     
 <div class="form-group">
     <label class="col-sm-9 text-left">Seleccione tipo</label>
     <div class="col-sm-12">
-    <select id="bottom_newregi" class="form-control" name="txt_role">
+    <select id="bottom_ini" class="form-control" name="txt_role">
         <option value="" selected="selected"> - seleccione rol - </option>
         <option value="admin">Admin</option>
         <option value="personal">Personal</option>
@@ -203,12 +174,19 @@ if(isset($_REQUEST['btn_register'])) //compruebe el nombre del botón "btn_regis
 </div>
 
 <div class="form-group">
-  <div class="col-sm-12">
-  <input  type="submit" name="btn_register" class="btn btn-success btn-block" value="Registrar">
-  <!--<a href="index.php" class="btn btn-danger">Cancel</a>-->
-  </div>
-</div> 
-</form>
+<div class="col-sm-12">
+<input  type="submit" name="btn_register" class="btn btn-success btn-block" value="Registro">
+<!--<a href="index.php" class="btn btn-danger">Cancel</a>-->
 </div>
+</div>
+    
+</form>
+</div><!--Cierra div login-->
+		</div>
+		
+	</div>
+			
+	</div>
+										
+	</body>
 </html>
-</body>
