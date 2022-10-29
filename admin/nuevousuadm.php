@@ -32,6 +32,39 @@
         font-size: 15px;
         font-weight: bold;
     }
+    .body__init {
+    background-image: url("img/img-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*este es los estilos del bode de registro de usuario*/
+.body__registro {
+    background-image: url("img/img-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*aqui cierran los estilos del bode de registro de usuario*/
+.titulo__ini{
+    font-size: 25px;
+    text-align: center;
+    font-family:  Georgia, serif;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+
+#bottom_ini{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #dde1ef;
+    box-shadow: -3px -3px 7px #fff, 3px 3px 5px rgb(94, 104, 121, 0.7);
+
+}
+
 </style>
 </head>
 	<body class="body__registro">
