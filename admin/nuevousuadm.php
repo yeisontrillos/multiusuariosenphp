@@ -66,7 +66,8 @@
     font-family:'Times New Roman', Times, serif;
 }
 </style>
-
+</head>
+<body class="body__registro">
 <?php 
 require_once "DBconect.php";
 
